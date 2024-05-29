@@ -1,0 +1,210 @@
+.card-body1{
+    border-radius: 8px;
+    height: 300px;
+    color: white;
+    background-image: url(image-2/2.png);
+    background-size: cover;
+}
+.card-body2{
+    border-radius: 8px;
+    height: 300px;
+    color: white;
+    background-image: url(image-2/3.png);
+    background-size: cover;
+}
+.card-body3{
+    border-radius: 8px;
+    height: 400px;
+    color: white;
+    background-image: url(image-2/4.png);
+    background-size: cover;
+}
+.card-title{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.card-text{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+.btn{
+    margin-left: 35px;
+}
+.card{
+    margin-top: 25px;
+    border: none;
+}
+.card-body{
+    margin: 20px;
+}
+.product-img{
+    width: 180px; 
+    height: 180px; 
+    margin: 20px"
+}
+.card-border{
+    display: flex;
+    border: 1px solid rgb(209, 206, 206);
+    border-radius: 8px;
+    height: 200px;
+}
+.fa-regular{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.card-h{
+    margin-top: 10px;
+}
+.product-text{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cart{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.fee{
+    color:#626365;
+}
+.question{
+    border: 1px solid rgb(231, 228, 228);
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.img-q{
+    width: 450px;
+}
+.equip{
+    display: flex;
+}
+.minus{
+    margin-left: 450px;
+    font-size:40px;
+}
+.plus{
+    font-size: 30px;
+}
+.equip-detail{
+    width: 500px;
+    color: rgb(145, 141, 141);
+}
+.contact-card{
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 420px;
+    background-color: rgb(223, 243, 222);
+    border-radius: 8px;
+}
+.contact-card2{
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 420px;
+    background-color: rgb(249, 244, 227);
+    border-radius: 8px;
+}
+.color3{
+    background-color: rgb(203, 244, 239);
+    margin-bottom: 40px;
+}
+
+.contact-container{
+    margin-left: 60px;
+    width: 500px;
+    border-radius: 8px;
+}
+.num-t{
+    color: rgb(163, 164, 162);
+}
+@property --progress-value {
+    syntax: '<integer>';
+    inherits: false;
+    initial-value: 0;
+}
+
+@keyframes prayer-progress {
+    to { --progress-value: 87; }
+}
+
+@keyframes coach-progress {
+    to { --progress-value: 95; }
+}
+
+@keyframes senior-progress {
+    to { --progress-value: 90; }
+}
+
+@keyframes ground-progress {
+    to { --progress-value: 80; }
+}
+
+.progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.progress-bar::before {
+    content: attr(data-percentage) '%';
+    position: absolute;
+}
+
+.progress-bar[data-percentage="87"] {
+    background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(red calc(var(--progress-value) * 1%), rgb(214, 212, 212) 0);
+    animation: prayer-progress 2s forwards;
+}
+
+.progress-bar[data-percentage="95"] {
+    background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(rgb(109, 225, 109) calc(var(--progress-value) * 1%), rgb(214, 212, 212) 0);
+    animation: coach-progress 2s forwards;
+}
+
+.progress-bar[data-percentage="90"] {
+    background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(rgb(255, 170, 0) calc(var(--progress-value) * 1%), rgb(214, 212, 212) 0);
+    animation: senior-progress 2s forwards;
+}
+
+.progress-bar[data-percentage="80"] {
+    background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(rgb(70, 134, 236) calc(var(--progress-value) * 1%), rgb(214, 212, 212) 0);
+    animation: ground-progress 2s forwards;
+}
+
+.bdy {
+    font-family: -apple-system, system-ui, Helvetica, Arial, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+progress {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
